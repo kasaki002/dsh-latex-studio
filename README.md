@@ -5,14 +5,14 @@
 
 ## 装
 
-profile `desktop` 里已经 link 到本目录（`C:\Users\七七\.dsh\profiles\desktop\package.json`）：
+用 DSH 的插件管理把本目录装进某个 profile。也可以手动在该 profile 的 `package.json`
+里加一行（路径换成你自己的）：
 
 ```json
-"dsh-latex-studio": "link:D:/windows/AAA My program/dsh-latex-studio"
+"dsh-latex-studio": "link:D:/path/to/dsh-latex-studio"
 ```
 
-换机器或重装时，用插件管理装这个目录即可；`C:\Users\七七\.dsh\plugins\dsh-latex-studio`
-只是指向同一目录的 junction，不是另一份副本。
+`%USERPROFILE%\.dsh\plugins\dsh-latex-studio` 只是指向同一目录的 junction，不是另一份副本。
 
 ## 入口
 
@@ -46,6 +46,9 @@ profile `desktop` 里已经 link 到本目录（`C:\Users\七七\.dsh\profiles\d
   `.tex`。`figures/`、`chapters/`、`.bib` 都跟着过来，相对路径不会断。
 - **浏览…**：打开页面内置的目录浏览器（盘符 → 目录 → `.tex`），不依赖系统对话框，也不会产生副本；
   点文件就直接载入。
+- **新建**：工具栏「新建」→ 用内置目录浏览器选文件夹（只列文件夹，可直接「选择这个文件夹」）+
+  填文件名，可勾选写入 ctexart 起始模板；创建后自动填好路径并载入编辑区。已存在的文件会被拒绝
+  （不会覆盖），父目录不存在会自动创建；上次用的目录会记住。
 - **下载 PDF**：编译成功后右上角出现「下载 PDF」。网页端走 `/api/pdf?...&download=1`
   （`attachment` + RFC 5987 文件名，中文名不会乱码）；会话视图里用 fetch 取字节再
   `a[download]`，桌面端的自定义协议下也能正常落盘。
