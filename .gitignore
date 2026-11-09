@@ -1,0 +1,38 @@
+# 依赖
+node_modules/
+.pnpm-store/
+
+# LaTeX 编译产物
+$d/
+out/
+drop/
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)
+*.bbl
+*.blg
+*.xdv
+
+# 临时/调试文件
+tmp/
+*.tmp
+*.bak
+
+# 编辑器与系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 本地配置与凭证（避免误提交）
+.env
+.env.*
+prefs.json
