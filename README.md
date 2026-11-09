@@ -87,7 +87,7 @@ npm install @kasaki002/dsh-latex-studio
 ## 目录
 
 ```
-D:\windows\AAA My program\latex-studio\   （可用 DSH_LATEX_HOME 改）
+%USERPROFILE%\.dsh\latex-studio\   （可用 DSH_LATEX_HOME 改；老的 D:\windows\AAA My program\latex-studio 如果还在会继续用）
   prefs.json   界面偏好（是否启用会话视图、网页端主题、分栏比例）
   state.json   按会话的界面状态（文件、引擎、页码、草稿）
   engines.json 引擎探测缓存（xelatex/pdflatex/lualatex 路径 + 版本）
