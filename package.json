@@ -1,8 +1,26 @@
 {
-  "name": "dsh-latex-studio",
+  "name": "@kasaki002/dsh-latex-studio",
   "version": "0.2.0",
-  "private": true,
   "description": "LaTeX 工作室：便携 MiKTeX（xelatex / pdflatex）+ 网页编辑器 + 编译工具",
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "latex",
+    "miktex",
+    "xelatex",
+    "pdflatex",
+    "typesetting"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kasaki002/dsh-latex-studio.git"
+  },
+  "homepage": "https://github.com/kasaki002/dsh-latex-studio#readme",
+  "bugs": {
+    "url": "https://github.com/kasaki002/dsh-latex-studio/issues"
+  },
   "type": "module",
   "main": "lib/index.js",
   "exports": {
@@ -17,8 +35,14 @@
     "locale",
     "icon.svg",
     "cordis.patch.yml",
-    "README.md"
+    "README.md",
+    "INTRO.zh.md",
+    "INTRO.en.md"
   ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "peerDependencies": {
     "@deepseek-ai/dsh-tools": "*"
   },

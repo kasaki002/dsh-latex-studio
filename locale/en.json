@@ -1,6 +1,7 @@
 {
   "meta": {
     "title": "LaTeX studio",
-    "description": "Compile LaTeX with a portable MiKTeX engine: a conversation view, a web editor and build tools."
+    "description": "Compile LaTeX with a portable MiKTeX engine: a conversation view, a web editor and build tools.",
+    "detail": "INTRO.en.md"
   }
 }

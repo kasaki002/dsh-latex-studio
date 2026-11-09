@@ -1,6 +1,7 @@
 {
   "meta": {
     "title": "LaTeX 工作室",
-    "description": "用便携 MiKTeX 编译 LaTeX：会话视图、网页编辑器与编译工具。"
+    "description": "用便携 MiKTeX 编译 LaTeX：会话视图、网页编辑器与编译工具。",
+    "detail": "INTRO.zh.md"
   }
 }
