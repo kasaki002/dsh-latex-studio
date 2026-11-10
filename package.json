@@ -1,6 +1,6 @@
 {
   "name": "@kasaki002/dsh-latex-studio",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "LaTeX 工作室：便携 MiKTeX（xelatex / pdflatex）+ 网页编辑器 + 编译工具",
   "license": "MIT",
   "keywords": [

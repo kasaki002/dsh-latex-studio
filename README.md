@@ -110,11 +110,11 @@ Host/Origin 校验和浏览器登录 cookie：没登录 401、来源不信任 40
 `?t=` 打开时换一个 `dsh_latex_sid` cookie（`Path=/dsh-latex`、`HttpOnly`、`SameSite=Strict`、
 12 小时），此后只对这个前缀生效；票据只能由已登录的界面申请，换完立即 303 到干净地址。
 
-## 兼容和 dsh-better-sidebar 集成
+## 兼容
 
-已经兼容的插件有dsh-better-sidebar
-装了 [dsh-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) 时，本插件会通过
-`ctx.betterSidebar.registerFileViewer` 注册一个「LaTeX」文件预览器（只匹配 `.tex`）：
+已经兼容的插件有dsh-better-sidebar。
+
+装了 [dsh-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) 时，本插件会通过 `ctx.betterSidebar.registerFileViewer` 注册一个「LaTeX」文件预览器（只匹配 `.tex`）：
 
 - 在文件树里点开 `.tex`，默认显示**源码**（可编辑）；点击「编译并预览」可编译并切到
   PDF 页，之后工具条上是「重新编译 / 下载 PDF / 源码」。
