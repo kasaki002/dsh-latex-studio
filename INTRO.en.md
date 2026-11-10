@@ -18,6 +18,8 @@ Write LaTeX, build it, and read the PDF without leaving DSH. The engine is a **p
 - **Drop a whole project**: `figures/`, `chapters/` and `.bib` files keep their relative paths and images stay intact.
 - **New file**: a built-in folder browser, a filename field and an optional ctexart starter template.
 - **Conversation view**: compile, preview and download without opening the web editor.
+- **Document output**: tick "Prefer generating .tex files" in Settings and document requests produce only `.tex` (no docx + pdf by default); you can also add a PDF and pick the project folder these files go to.
+- **Live compile**: pick "after typing pauses" or "after save" in Settings and the PDF refreshes itself.
 - **Automatic reruns**: a second LaTeX pass when `Rerun`, undefined references or changed labels ask for it; documents using `\bibliography` run bibtex too.
 
 ## Notes
