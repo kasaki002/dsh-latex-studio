@@ -5,7 +5,7 @@ Write LaTeX, build it, and read the PDF without leaving DSH. The engine is a **p
 1. Open any conversation and click the **LaTeX** tab at the top.
    - No tab? Open **Settings → LaTeX studio** and turn the switch on.
 2. On first use it says the engine is missing; click the button to install (about 150 MB).
-3. Pick a file with **Browse…**, or drop a `.tex` file or a whole project folder onto the window.
+3. Pick a file with **Import file** (built-in browser with address bar, breadcrumbs, search and sorting), or drop a `.tex` file or a whole project folder onto the window.
 4. Click **Compile**. The PDF appears on the right, with a **Download PDF** button once the build succeeds.
 5. Click **Open web version** to open the web editor.
 6. The reset button is in the top-left corner.
